@@ -1,6 +1,5 @@
 deployment:
-    production:
-      branch: production
-      commands:
-        - git push git@heroku.com:uhsforums.git $CIRCLE_SHA1:master
-        - heroku run rake db:migrate --app uhsforums
+  staging:
+    branch: master
+    heroku:
+      appname: uhsforums

@@ -1,9 +1,6 @@
-<h1><%= @group.name %> <%= @topic.name %></h1>
-
-
 <div class="row">
   <div class="col-md-5 col-md-offset-1">
-    <h2>Recent Posts</h2>
+    <h2>Posts</h2>
   </div>
 
   <div class="col-md-2 col-md-offset-4">
@@ -17,9 +14,6 @@
   <div class="col-md-6 col-md-offset-2" id="post-form" style="display:none;"></div>
 </div>
 
-
 <div class="row">
-  <%= will_paginate @posts %>
-    <div class="col-md-7 col-md-offset-1" id="posts"><%= render @posts %></div>
-  <%= will_paginate @posts %>
+  <div class="col-md-7 col-md-offset-1" id="posts"><%= render @posts %></div>
 </div>

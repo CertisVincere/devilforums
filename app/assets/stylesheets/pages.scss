@@ -1,0 +1,33 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@font-face {
+  font-family: "Stellar";
+  src:font-url('Stellar/Stellar-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.contact-email {
+  font-size: 16px;
+}
+
+p {
+  margin-top: 14px;
+  font-family: "Stellar";
+  color: white;
+  font-size: 16px;
+  margin-left: 14px;
+}
+
+.email-link {
+  color: white;
+  &:hover {
+    text-decoration: underline;
+    color: white;
+  }
+}
+
+.contact-pic {
+  margin-left: 14px;
+}

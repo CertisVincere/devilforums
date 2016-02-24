@@ -16,6 +16,10 @@ gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'paperclip'
 gem 'simple_form'
+gem 'elasticsearch-model'
+gem 'elasticsearch-rails'
+gem 'bonsai-elasticsearch-rails'
+gem 'responders', '~> 2.0'
 
 ruby '2.2.3'
 

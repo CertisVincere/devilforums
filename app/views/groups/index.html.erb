@@ -1,21 +1,16 @@
 <h1>My Groups</h1>
 
+<h2>Search for groups</h2>
+<div class="container">
+    <input type="text" class="form-control" id="search_input" placeholder="Search" />
+</div>
 
 
-<%= form_tag groups_path, method: :get do %>
-  <p>
-    <%= text_field_tag :query, params[:query], class: 'form-control' %>
-    <%= submit_tag "Search", class: 'form-control', name: :nil %>
-  </p>
-<% end %>
-
-<%= will_paginate @groups %>
 
 <ul class="groups">
   <%= render @groups %>
 </ul>
 
-<%= will_paginate @groups %>
 
 <% if @groups.empty? %>
   <h2>You have no groups. <%= link_to "Find some groups to get started!", search_groups_path %></h2>

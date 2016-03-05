@@ -28,7 +28,7 @@ class GroupsController < ApplicationController
       if params[:query].present?
         @groups = Group.search(params[:query])
       else
-        @groups = @user.groups.paginate(page: params[:page])
+        @groups = Group.all
       end
     end
   end

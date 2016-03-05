@@ -25,7 +25,11 @@ class GroupsController < ApplicationController
       redirect_to login_url
     else
       @user = current_user
-      @groups = @user.groups.paginate(page: params[:page])
+      if params[:query].present?
+        @groups = Group.search(params[:query])
+      else
+        @groups = @user.groups.paginate(page: params[:page])
+      end
     end
   end
 

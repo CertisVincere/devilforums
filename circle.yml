@@ -3,7 +3,3 @@ deployment:
     branch: master
     heroku:
       appname: uhsforums
-
-machine:
-  services:
-    - elasticsearch
